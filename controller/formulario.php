@@ -28,7 +28,6 @@
 
 	if ($retorno['success']){
 		$_SESSION['success'] = 1;
-
 		header("Location: http://localhost/cadastro/cadastroEmpresa.php");
 	} else{
 		$_SESSION['alert'] = $retorno['alert'];
