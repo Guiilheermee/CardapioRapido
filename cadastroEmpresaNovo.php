@@ -51,7 +51,7 @@ include __DIR__ . '/view/header.php';
             <div class="col-md-4">
                 <div class="form-group">
                     <label>Telefone</label>
-                    <input type="text" class="form-control" placeholder="(67) 3467-2525" aria-describedby="basic-addon1" name="tel" required>
+                    <input id = "tel"type="text" class="form-control" placeholder="(67) 3467-2525" aria-describedby="basic-addon1" name="tel" required>
                 </div>
             </div>
 
@@ -124,12 +124,62 @@ include __DIR__ . '/view/header.php';
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label>alguma coisa</label>
-                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="nome" required>
+                    <label>Preço do Marmitex</label>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="R$ 00,00" name="nome" required>
                 </div>
             </div>
         </div>
-
+        
+        <div class="row" >
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Horário de Funcionamento</label>
+                    <input type="datetime" class="form-control" aria-describedby="basic-addon1" name="nome" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Prato Feito</label>
+                    <select name="comida" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
+                        <option value="" selected>Selecione</option>
+                        <option value="S">Sim</option>
+                        <option value="N">Não</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Preço do Prato Feito</label>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="R$ 00,00" name="nome" required>
+                </div>
+            </div>
+        </div>
+        
+                <div class="row" >
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>teste1</label>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="nome" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Por Kilo</label>
+                    <select name="comida" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
+                        <option value="" selected>Selecione</option>
+                        <option value="S">Sim</option>
+                        <option value="N">Não</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Preço do Kilo</label>
+                    <input id = "preco"type="text" class="form-control" aria-describedby="basic-addon1" placeholder="R$ 00,00" name="nome" required>
+                </div>
+            </div>
+        </div>
+        
         <div class="row" >
             <div class="col-md-4">
                 <div class="form-group">
@@ -154,7 +204,7 @@ include __DIR__ . '/view/header.php';
             </div>
 
         </div>
-
+    </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -166,7 +216,7 @@ include __DIR__ . '/view/header.php';
                 </div>
             </div>
         </div>
-    </div>
+
 </div>
 <script src="/Cadastro/js/jquery-3.2.1.min.js"></script>
 <script src="/Cadastro/js/bootstrap.min.js"></script>
@@ -175,6 +225,7 @@ include __DIR__ . '/view/header.php';
     $(document).ready(function () {
         $("#tel").mask("(00) 00000-0000");
         $("#cep").mask("00000-000");
+        $("#preco").mask("00,00");
 
     });
 </script>

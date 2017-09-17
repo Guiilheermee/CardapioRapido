@@ -28,7 +28,7 @@
 
 	if ($retorno['success']){
 		$_SESSION['success'] = 1;
-		header("Location: http://localhost/cadastro/cadastroEmpresa.php");
+		header("Location: http://localhost/CardapioRapido/cadastroEmpresaNovo.php");
 	} else{
 		$_SESSION['alert'] = $retorno['alert'];
 	}
