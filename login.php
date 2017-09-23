@@ -40,9 +40,9 @@ include __DIR__ . '/view/header.php';
 
 
 
-<script src="/Cadastro/js/jquery-3.2.1.min.js"></script>
-<script src="/Cadastro/js/bootstrap.min.js"></script>
-<script src="/Cadastro/js/jquery.mask.min.js"></script>
+<script src="/CardapioRapido/js/jquery-3.2.1.min.js"></script>
+<script src="/CardapioRapido/js/bootstrap.min.js"></script>
+<script src="/CardapioRapido/js/jquery.mask.min.js"></script>
 <script>
     $(document).ready(function () {
         $("#cpf").mask("000.000.000-00");

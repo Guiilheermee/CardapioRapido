@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Teste';
+$page_title = 'Cadastro da Empresa';
 include __DIR__ . '/view/header.php';
 ?>
 
@@ -19,7 +19,7 @@ include __DIR__ . '/view/header.php';
             <div class="col-md-6">
                 <div class="form-group">
                     <label>CNPJ</label>
-                    <input type="text" class="form-control" placeholder="00.000.000/0001-12" aria-describedby="basic-addon1" name="cnpj" required>
+                    <input id= "cnpj" type="text" class="form-control" placeholder="00.000.000/0001-12" aria-describedby="basic-addon1" name="cnpj" required>
                 </div>
             </div>
 
@@ -100,11 +100,14 @@ include __DIR__ . '/view/header.php';
 
         </div>
     </div>
+    
+    <!--Divisão-->
+    
     <div class="jumbotron">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
-                    <label>Delivery</label>
+                    <label>Entrega</label>
                     <select name="delivery" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
                         <option value="" selected>Selecione</option>
                         <option value="S">Sim</option>
@@ -112,32 +115,34 @@ include __DIR__ . '/view/header.php';
                     </select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Horário de Funcionamento</label>
+                    <input type="datetime" class="form-control" aria-describedby="basic-addon1" name="nome" required>
+                </div>
+            </div>
+        </div>
+        <div class="row" >
+
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>Marmitex</label>
-                    <select name="delivery" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
+                    <select name="comida" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
                         <option value="" selected>Selecione</option>
                         <option value="S">Sim</option>
                         <option value="N">Não</option>
                     </select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>Preço do Marmitex</label>
                     <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="R$ 00,00" name="nome" required>
                 </div>
             </div>
         </div>
-        
         <div class="row" >
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label>Horário de Funcionamento</label>
-                    <input type="datetime" class="form-control" aria-describedby="basic-addon1" name="nome" required>
-                </div>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>Prato Feito</label>
                     <select name="comida" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
@@ -147,22 +152,16 @@ include __DIR__ . '/view/header.php';
                     </select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>Preço do Prato Feito</label>
                     <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="R$ 00,00" name="nome" required>
                 </div>
             </div>
         </div>
-        
-                <div class="row" >
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label>teste1</label>
-                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="nome" required>
-                </div>
-            </div>
-            <div class="col-md-4">
+
+        <div class="row" >
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>Por Kilo</label>
                     <select name="comida" class="form-control" name="delivery" aria-describedby="basic-addon1" required>
@@ -172,19 +171,19 @@ include __DIR__ . '/view/header.php';
                     </select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>Preço do Kilo</label>
                     <input id = "preco"type="text" class="form-control" aria-describedby="basic-addon1" placeholder="R$ 00,00" name="nome" required>
                 </div>
             </div>
         </div>
-        
+
         <div class="row" >
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
-                    <span class="input-group-addon" id="cartao" aria-describedby="basic-addon1">Cartões aceitos</span>
-                    <input type="checkbox" name="form-control" value="MASTERCARD" > MASTERCARD &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="input-group-addon">Cartões aceitos</span>
+                    <input type="checkbox" name="vehicle" value="MASTERCARD" > MASTERCARD &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <input type="checkbox" name="form-control" value="VISA" > VISA <br>
                     <input type="checkbox" name="form-control" value="AMERICANEXPRESS" > AMERICANEXPRESS
                     <input type="checkbox" name="form-control" value="ELO" > ELO<br>
@@ -192,7 +191,7 @@ include __DIR__ . '/view/header.php';
                 </div>  		
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="form-group">
                     <span class="input-group-addon" id="comida" aria-describedby="basic-addon1">Comidas servidas</span>
                     <input type="checkbox" name="form-control" value="MASTERCARD" > Almoço
@@ -205,27 +204,28 @@ include __DIR__ . '/view/header.php';
 
         </div>
     </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <button type="reset" class="btn btn-default"> Limpar</button>
-                    <!--<button type="submit" class="btn btn-primary"> Cadastrar</button>-->
-                    <button type="submit" class="btn btn-success" aria-expanded="false">
-                        Registrar <span class="glyphicon glyphicon-floppy-disk"></span>
-                    </button>
-                </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <button type="reset" class="btn btn-default"> Limpar</button>
+                <!--<button type="submit" class="btn btn-primary"> Cadastrar</button>-->
+                <button type="submit" class="btn btn-success" aria-expanded="false">
+                    Registrar <span class="glyphicon glyphicon-floppy-disk"></span>
+                </button>
             </div>
         </div>
+    </div>
 
 </div>
-<script src="/Cadastro/js/jquery-3.2.1.min.js"></script>
-<script src="/Cadastro/js/bootstrap.min.js"></script>
-<script src="/Cadastro/js/jquery.mask.min.js"></script>
+<script src="/CardapioRapido/js/jquery-3.2.1.min.js"></script>
+<script src="/CardapioRapido/js/bootstrap.min.js"></script>
+<script src="/CardapioRapido/js/jquery.mask.min.js"></script>
 <script>
     $(document).ready(function () {
         $("#tel").mask("(00) 00000-0000");
         $("#cep").mask("00000-000");
         $("#preco").mask("00,00");
+        $("#cnpj").mask("00.000.000/0000-00");
 
     });
 </script>

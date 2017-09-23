@@ -1,10 +1,10 @@
 <?php
-$page_title = 'Cadastro - Cardápio Rápido';
+$page_title = 'Cadastro Pessoa';
 include __DIR__ . '/view/header.php';
 ?>
 <div class="margem">
     <div class="container">
-        <h3>Cadastro pessoa física - Cardápio Rápido</h3>
+        <h3>Cadastro pessoa física - Cardápio Rápido UEMS/UFGD</h3>
         <?php
         if (isset($_SESSION['success']) && $_SESSION['success']) {
             echo '<div class="alert alert-success alert-dismissable">
@@ -23,7 +23,7 @@ include __DIR__ . '/view/header.php';
         session_destroy();
         ?>
         <div class="jumbotron">
-            <form method="post" action="controller/formulario.php">
+            <form method="post" action="controller/formulario.php"></form>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
@@ -77,9 +77,9 @@ include __DIR__ . '/view/header.php';
 
         </div>
     </div>
-    <script src="/Cadastro/js/jquery-3.2.1.min.js"></script>
-    <script src="/Cadastro/js/bootstrap.min.js"></script>
-    <script src="/Cadastro/js/jquery.mask.min.js"></script>
+    <script src="/CardapioRapido/js/jquery-3.2.1.min.js"></script>
+    <script src="/CardapioRapido/js/bootstrap.min.js"></script>
+    <script src="/CardapioRapido/js/jquery.mask.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#tel").mask("(00)    00000-0000");
