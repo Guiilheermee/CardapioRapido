@@ -21,11 +21,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../../../sislabweb/view/main.php">Home</a></li>
-                    <li><a href="../../../sislabweb/sobre.php">Sobre</a></li>
-                    <li><a href="../../../sislabweb/contato.php">Contato</a></li>
-                    <li><a href="../../../sislabweb/documentacao/index.html">Documentação</a></li>
-                    <li><a class="btn btn-danger" href="../../../sislabweb/logout.php">Logout</a></li>
+                    <li class="active"><a href="../../../CardapioRapido/login.php">Início</a></li>
+                    <li><a href="../../../CardapioRapido/sobre.php">Sobre</a></li>
+                    <li><a class="glyphicon glyphicon-log-out" href="../../../CardapioRapido/logout.php"> Sair</a></li>
                 </ul>
             </div>
         </div>
