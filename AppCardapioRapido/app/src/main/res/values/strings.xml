@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Cardápio Rápido</string>
+    <string name="click_button_generate_qrcode">Clique no botão para gerar o QR Code e parear a LIO</string>
+    <string name="generate_qrcode">Gerar QR Code</string>
+    <string name="position_camera_lio_to_read_qrcode">Posicione a câmera da LIO para ler o QRCode sincronizar com este Totem</string>
+    <string name="attention">Atenção!</string>
+    <string name="description">Descrição</string>
+    <string name="yes">Sim</string>
+    <string name="ok">Ok</string>
+    <string name="no">Não</string>
+    <string name="daily_km_livre">Diária com Km livre</string>
+    <string name="value_total_reserve">Valor total de sua Reserva</string>
+    <string name="value_diferente_payment">Valor Diferenciado para Pagamento Antecipado</string>
+    <string name="resume">Resumo</string>
+    <string name="group">GRUPO</string>
+    <string name="dailies">Diárias</string>
+    <string name="tax_adm">Taxa Adm</string>
+    <string name="protections_includes">Proteções Inclusas: </string>
+    <string name="protections_and_itens">Proteções e Itens</string>
+    <string name="products_add">Produtos Adicionais</string>
+    <string name="value_pre_auth">Valor da Pré-autorização</string>
+    <string name="sponsor_financer">Responsável financeiro</string>
+    <string name="cpf">CPF: </string>
+
+</resources>
+

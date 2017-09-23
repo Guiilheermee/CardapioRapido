@@ -217,9 +217,7 @@ include __DIR__ . '/view/header.php';
     </div>
 
 </div>
-<script src="/CardapioRapido/js/jquery-3.2.1.min.js"></script>
-<script src="/CardapioRapido/js/bootstrap.min.js"></script>
-<script src="/CardapioRapido/js/jquery.mask.min.js"></script>
+
 <script>
     $(document).ready(function () {
         $("#tel").mask("(00) 00000-0000");

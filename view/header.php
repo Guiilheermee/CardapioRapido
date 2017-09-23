@@ -5,8 +5,15 @@
         <meta charset="UTF-8">
         <title><?php echo $page_title; ?></title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css" >
+        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+        <link rel="stylesheet" href="../../../resources/css/bootstrap.css">
+        <link rel="stylesheet" href="../../../resources/css/style.css" >
+
+
+   <script src="../../../resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js"></script>
+    <script src="../../../resources/js/jquery.mask.min.js"></script>
+
     </head>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="row">
@@ -21,9 +28,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../../../CardapioRapido/login.php">Início</a></li>
-                    <li><a href="../../../CardapioRapido/sobre.php">Sobre</a></li>
-                    <li><a class="glyphicon glyphicon-log-out" href="../../../CardapioRapido/logout.php"> Sair</a></li>
+                    <li class="active"><a href="../../../login.php">Início</a></li>
+                    <li><a href="../../../sobre.php">Sobre</a></li>
+                    <li><a class="glyphicon glyphicon-log-out" href="../../../logout.php"> Sair</a></li>
                 </ul>
             </div>
         </div>
@@ -31,3 +38,4 @@
 
     <body>
         <div class="container">
+           

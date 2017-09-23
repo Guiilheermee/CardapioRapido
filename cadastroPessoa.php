@@ -23,12 +23,12 @@ include __DIR__ . '/view/header.php';
         session_destroy();
         ?>
         <div class="jumbotron">
-            <form method="post" action="controller/formulario.php"></form>
+            <form method="post" action="controller/formulario.php">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Nome</label>
-                            <input type="text" class="form-control" placeholder="Nome Completo" aria-describedby="basic-addon1" name="nome" required>
+                            <input id="name" type="text" class="form-control" placeholder="Nome Completo" aria-describedby="basic-addon1" name="nome" required>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ include __DIR__ . '/view/header.php';
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <button type="reset" class="btn btn-default"> Limpar</button>
+                            <button type="reset" onclick="clearInputs()" class="btn btn-default"> Limpar</button>
                             <!--<button type="submit" class="btn btn-primary"> Cadastrar</button>-->
                             <button type="submit" class="btn btn-success" aria-expanded="false">
                                 Registrar <span class="glyphicon glyphicon-floppy-disk"></span>
@@ -74,21 +74,21 @@ include __DIR__ . '/view/header.php';
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
-    <script src="/CardapioRapido/js/jquery-3.2.1.min.js"></script>
-    <script src="/CardapioRapido/js/bootstrap.min.js"></script>
-    <script src="/CardapioRapido/js/jquery.mask.min.js"></script>
+  
     <script>
+      
         $(document).ready(function () {
-            $("#tel").mask("(00)    00000-0000");
+            $("#tel").mask("(00)00000-0000");
             $("#cpf").mask("000.000.000-00");
 
         });
+
+          function clearInputs(){
+            $("#name").html("");
+        }
     </script>
-    <br /><br />
-    <br />
     <?php
     include __DIR__ . '/view/footer.php';
     ?>

@@ -11,7 +11,7 @@
 	if(empty($_POST['nome'])) // empty verifica se ela esta vazia ou não
 	{
 		$_SESSION['alert'] = "Campo nome obrigatório";
-		header("Location: http://localhost/cadastro/");
+		header("Location:  ../cadastroPessoa.php");
 	}/*else 
 	{
 		$nome = $_POST['nome'];
@@ -20,7 +20,7 @@
 	if (!is_numeric($_POST['telefone'])) //retorna true ou false
 	{
 		$_SESSION['alert'] = "Numero de telefone invalido 67999620112";
-		header("Location: http://localhost/cadastro/");
+		header("Location: ../cadastro/");
 	}
 
 	$formulario = new Formulario();
@@ -28,7 +28,7 @@
 
 	if ($retorno['success']){
 		$_SESSION['success'] = 1;
-		header("Location: http://localhost/CardapioRapido/cadastroEmpresaNovo.php");
+		header("Location: ../cadastroEmpresaNovo.php");
 	} else{
 		$_SESSION['alert'] = $retorno['alert'];
 	}

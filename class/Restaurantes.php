@@ -18,11 +18,11 @@
                         
 			if($this->query->execute()){
                             $this->rows = $this->query->fetch(PDO::FETCH_OBJ);
-				return array("success" => "teste","data"=> $this->rows);
+				return array("success" => true,"data"=> $this->rows);
 			}else{
 				$this->queryError = $this->query->errorInfo();
 				parent::__destruct();
-				return array("success" => "0", "alert" => "Error - ".$this->queryError[2]);
+				return array("success" => false, "msg" => "Error - ".$this->queryError[2]);
 			}
 		}
 	}

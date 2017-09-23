@@ -17,7 +17,7 @@ class DataBase {
 	
 	public function DatabaseDefault() {
 		try{
-			$this->connecting_df = new PDO("mysql:host=localhost;dbname=cardapio", "root", "");
+			$this->connecting_df = new PDO("mysql:host=sql204.byethost7.com;dbname=b7_20739044_cardapio", "b7_20739044", "cardapio123");
 			$this->connecting_df->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$this->connecting_df->exec('SET NAMES utf8');
 			
