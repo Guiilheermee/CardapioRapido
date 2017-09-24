@@ -70,7 +70,14 @@ public class RestauranteItemView extends BaseAdapter {
             Restaurante restaurante2 = restaurante.get(i);
             //UiHelper.showPicassoImage(restaurante2.getImagem(), ivBanner, mContext);
             txtRestaurant.setText(restaurante2.getNome_empresa());
-            txtRestaurant.setOnClickListener(view -> dialogService.showMessageTwoOptions(CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.attention), restaurante2.getNome_empresa() + "\n", CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.yes),
+            txtRestaurant.setOnClickListener(view -> dialogService.showMessageTwoOptions(CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.attention),
+                    restaurante2.getNome_empresa() + "\n"
+                            + "Horário de atendimento: 06:00 às 22:00"
+                            + "\nDelivery: Sim"
+                            + "\nPreço da refeição: R$15,00"
+
+
+                    , CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.yes),
                     CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.no), view1 -> {
                         stateChanger.closeDialog(ApplicationState.DialogConfirmTwoOptionsMessage);
                         stateChanger.changeStateArguments(ApplicationState.CardapioFragment,false,null,"");

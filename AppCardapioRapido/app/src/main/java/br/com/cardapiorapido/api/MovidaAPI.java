@@ -9,6 +9,6 @@ import retrofit2.http.GET;
  */
 
 public interface MovidaAPI {
-        @GET("/controller/lista_restaurantes/")
+        @GET("/controller/lista_restaurantes.php")
     Observable<RestaurantesResponse> getBanners();
 }

@@ -35,7 +35,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.0">
 
         <ScrollView
             android:layout_width="0dp"
@@ -60,291 +61,24 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <android.support.constraint.ConstraintLayout
-                    android:id="@+id/constrain_pay_express"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/borda_cinza"
-                    app:layout_constraintHorizontal_bias="0.4"
-                    app:layout_constraintLeft_toLeftOf="@+id/guideline"
-                    app:layout_constraintRight_toLeftOf="@+id/constrain_pay_now"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <br.com.cardapiorapido.ui.components.TextViewMyriadRegular
-                        android:id="@+id/textView62"
-                        android:layout_width="0dp"
-                        android:layout_height="62dp"
-                        android:background="@drawable/corner_cinza_bg"
-                        android:gravity="center|center_horizontal"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:text="@string/value_total_reserve"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/label_size_small"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-
-                    <br.com.cardapiorapido.ui.components.TextViewVagBold
-                        android:id="@+id/txt_value_reserve"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="24dp"
-                        android:gravity="center"
-                        android:text="Total: R$ 20,200"
-                        android:textColor="@color/gray_4444"
-                        android:textSize="@dimen/text_size_price_vehicle"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView62"
-                        tools:ignore="HardcodedText" />
-
-
-                </android.support.constraint.ConstraintLayout>
-
-                <android.support.constraint.ConstraintLayout
-                    android:id="@+id/constrain_pay_now"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/borda_laranja"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="@+id/constrain_pay_express"
-                    app:layout_constraintLeft_toRightOf="@+id/constrain_pay_express"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:ignore="MissingPrefix">
-
-                    <br.com.cardapiorapido.ui.components.TextViewMyriadRegular
-                        android:id="@+id/button12"
-                        android:layout_width="0dp"
-                        android:layout_height="62dp"
-                        android:background="@drawable/corner_laranja_bg"
-                        android:gravity="center|center_horizontal"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:text="@string/value_diferente_payment"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/label_size_small"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <br.com.cardapiorapido.ui.components.TextViewVagBold
-                        android:id="@+id/txt_value_reserve_antecip"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="24dp"
-                        android:gravity="center"
-                        android:text="Total: R$ 20,200"
-                        android:textColor="@color/gray_4444"
-                        android:textSize="@dimen/text_size_price_vehicle"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintHorizontal_bias="1.0"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/button12"
-                        tools:ignore="HardcodedText" />
-
-                </android.support.constraint.ConstraintLayout>
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.3"
-                    tools:layout_editor_absoluteX="297dp"
-                    tools:layout_editor_absoluteY="86dp" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagBold
-                    android:id="@+id/txt_resume"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/resume"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagBold
-                    android:id="@+id/txt_group"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_resume" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagRegular
-                    android:id="@+id/txt_dailies"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_group" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagRegular
-                    android:id="@+id/txt_protections_include"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_dailies" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagBold
-                    android:id="@+id/txt_protections_itens"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_protections_include" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagRegular
-                    android:id="@+id/txt_protections"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_protections_itens" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagBold
-                    android:id="@+id/txt_products_add"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_protections" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagRegular
-                    android:id="@+id/txt_products"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_products_add" />
-
-                <br.com.cardapiorapido.ui.components.TextViewVagRegular
-                    android:id="@+id/txt_tax"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_description"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/guideline"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_products" />
-
 
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout232"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
                     android:background="@drawable/borda_laranja"
-                    app:layout_constraintLeft_toLeftOf="@+id/guideline"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constrain_pay_express">
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent">
 
                     <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
                         android:id="@+id/textView67"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:layout_marginLeft="8dp"
@@ -354,102 +88,245 @@
                         android:gravity="center_vertical|center"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
-                        android:text="@string/value_pre_auth"
+                        android:text="Segunda - Feira"
                         android:textColor="@color/gray_button"
-                        android:textSize="@dimen/text_size_title"
+                        android:textSize="24sp"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
+                        android:id="@+id/textViewMyriadSemiBold6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Alface, Tomae, Pepino"
+                        android:textColor="@color/gray_button"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_pre_auth" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
+                        android:id="@+id/textViewMyriadSemiBold5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Agriao refogado"
+                        android:textColor="@color/gray_button"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewVagBold6" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
+                        android:id="@+id/textViewMyriadSemiBold4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Carne Assada"
+                        android:textColor="@color/gray_button"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewVagBold2" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
+                        android:id="@+id/textViewMyriadSemiBold3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Bife de soja"
+                        android:textColor="@color/gray_button"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewVagBold3" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
+                        android:id="@+id/textViewMyriadSemiBold2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Arroz branco, Feijao preto"
+                        android:textColor="@color/gray_button"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewVagBold4" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
+                        android:id="@+id/textViewMyriadSemiBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Uva"
+                        android:textColor="@color/gray_button"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewVagBold5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="16dp" />
+
                     <br.com.cardapiorapido.ui.components.TextViewVagBold
                         android:id="@+id/txt_pre_auth"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="20dp"
-                        android:layout_marginBottom="16dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
-                        android:text="R$700,00"
+                        android:text="Entrada"
                         android:textColor="@color/gray_4444"
                         android:textSize="@dimen/text_size_price_vehicle"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView67"
-                        app:layout_constraintVertical_bias="0.83"
+                        tools:ignore="HardcodedText"
+                        app:layout_constraintHorizontal_bias="0.504" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewVagBold
+                        android:id="@+id/textViewVagBold6"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Guarnicão"
+                        android:textColor="@color/gray_4444"
+                        android:textSize="@dimen/text_size_price_vehicle"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMyriadSemiBold3"
+                        tools:ignore="HardcodedText" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewVagBold
+                        android:id="@+id/textViewVagBold5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Suco"
+                        android:textColor="@color/gray_4444"
+                        android:textSize="@dimen/text_size_price_vehicle"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMyriadSemiBold2"
+                        tools:ignore="HardcodedText" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewVagBold
+                        android:id="@+id/textViewVagBold4"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Acompanhamento"
+                        android:textColor="@color/gray_4444"
+                        android:textSize="@dimen/text_size_price_vehicle"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMyriadSemiBold5"
+                        tools:ignore="HardcodedText" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewVagBold
+                        android:id="@+id/textViewVagBold3"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Prato Vegetariano"
+                        android:textColor="@color/gray_4444"
+                        android:textSize="@dimen/text_size_price_vehicle"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMyriadSemiBold4"
+                        tools:ignore="HardcodedText" />
+
+                    <br.com.cardapiorapido.ui.components.TextViewVagBold
+                        android:id="@+id/textViewVagBold2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Prato Principal"
+                        android:textColor="@color/gray_4444"
+                        android:textSize="@dimen/text_size_price_vehicle"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMyriadSemiBold6"
                         tools:ignore="HardcodedText" />
 
                 </android.support.constraint.ConstraintLayout>
 
-                <android.support.constraint.ConstraintLayout
-                    android:id="@+id/constraintLayout234"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/borda_laranja"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintLeft_toLeftOf="@+id/guideline"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout232">
-
-                    <br.com.cardapiorapido.ui.components.TextViewMyriadSemiBold
-                        android:id="@+id/textView69"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:gravity="center_vertical|center"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp"
-                        android:text="@string/sponsor_financer"
-                        android:textColor="@color/gray_button"
-                        android:textSize="@dimen/text_size_title"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <br.com.cardapiorapido.ui.components.TextViewVagBold
-                        android:id="@+id/txt_cpf"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="16dp"
-                        android:text="CPF: 111.111.111-11"
-                        android:textColor="@color/gray_4444"
-                        android:textSize="@dimen/text_size_price_vehicle"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView69"
-                        tools:ignore="HardcodedText"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        android:layout_marginBottom="16dp" />
-
-                    <ImageView
-                        android:id="@+id/iv_status_cpf"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="0dp"
-                        android:src="@drawable/ic_ok"
-                        app:layout_constraintBottom_toBottomOf="@+id/txt_cpf"
-                        app:layout_constraintLeft_toRightOf="@+id/txt_cpf"
-                        app:layout_constraintTop_toTopOf="@+id/txt_cpf" />
-
-                </android.support.constraint.ConstraintLayout>
             </android.support.constraint.ConstraintLayout>
         </ScrollView>
 
