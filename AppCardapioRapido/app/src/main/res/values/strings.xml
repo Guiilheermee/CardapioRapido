@@ -3,11 +3,11 @@
     <string name="click_button_generate_qrcode">Clique no botão para gerar o QR Code e parear a LIO</string>
     <string name="generate_qrcode">Gerar QR Code</string>
     <string name="position_camera_lio_to_read_qrcode">Posicione a câmera da LIO para ler o QRCode sincronizar com este Totem</string>
-    <string name="attention">Atenção!</string>
+    <string name="attention">Informações</string>
     <string name="description">Descrição</string>
-    <string name="yes">Sim</string>
+    <string name="yes">Ver Cardápio</string>
     <string name="ok">Ok</string>
-    <string name="no">Não</string>
+    <string name="no">Voltar</string>
     <string name="daily_km_livre">Diária com Km livre</string>
     <string name="value_total_reserve">Valor total de sua Reserva</string>
     <string name="value_diferente_payment">Valor Diferenciado para Pagamento Antecipado</string>

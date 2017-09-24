@@ -1,7 +1,10 @@
 package br.com.cardapiorapido.ui.fragments;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,12 +27,17 @@ public class RestaurantFragment extends AbstractFragment {
 
     @BindView(R.id.list_banners)
     ListView listBanners;
+    @BindView(R.id.my_toolbar)
+    Toolbar toolbar;
 
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         CardapioRapidoApplication.getApplicationComponent().inject(this);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        }
     }
 
     @Nullable
@@ -47,7 +55,7 @@ public class RestaurantFragment extends AbstractFragment {
     }
 
     public void openCall() {
-        List<Restaurante>lista=new ArrayList<>();
+        List<Restaurante> lista=new ArrayList<>();
         Restaurante restaurante1=new Restaurante();
         restaurante1.setNome_empresa("La Ville");
         lista.add(restaurante1);
@@ -58,7 +66,7 @@ public class RestaurantFragment extends AbstractFragment {
         RestauranteItemView adapter = new RestauranteItemView(getContext(), lista);
 
         listBanners.setAdapter(adapter);
-    /*    NetworkHelper.getApiMovida().getBanners().subscribeOn(Schedulers.io())
+      /* NetworkHelper.getApiMovida().getBanners().subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(bannerResponse -> {
                             if (bannerResponse.isSuccess()) {
@@ -67,7 +75,6 @@ public class RestaurantFragment extends AbstractFragment {
                                 bannerResponse.getRestaurantes().add(bannerResponse.getRestaurantes().get(1));
                                 bannerResponse.getRestaurantes().add(bannerResponse.getRestaurantes().get(1));
                                 RestauranteItemView adapter = new RestauranteItemView(getContext(), bannerResponse.getRestaurantes());
-                                listBanners.setNumColumns(bannerResponse.getRestaurantes().size());
                                 listBanners.setAdapter(adapter);
                             } else
                                 UiHelper.showDialog(getContext(), "", bannerResponse.getMsg(), "", null);
