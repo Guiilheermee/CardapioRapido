@@ -3,7 +3,7 @@ $page_title = 'Cadastro Pessoa';
 include __DIR__ . '/view/header.php';
 ?>
 <div class="margem">
-    <div class="container">
+    
         <h3>Cadastro pessoa física - Cardápio Rápido UEMS/UFGD</h3>
         <?php
         if (isset($_SESSION['success']) && $_SESSION['success']) {
@@ -74,7 +74,6 @@ include __DIR__ . '/view/header.php';
                     </div>
                 </div>
             </form>
-        </div>
     </div>
   
     <script>

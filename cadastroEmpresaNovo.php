@@ -2,10 +2,8 @@
 $page_title = 'Cadastro da Empresa';
 include __DIR__ . '/view/header.php';
 ?>
-
 <div class="margem">
     <h3>Cadastro da Empresa - Cardápio Rápido UEMS/UFGD</h3>
-
     <div class="jumbotron">
         <form method="post" action="controller/formulario2.php"></form>
         <div class="row">
@@ -227,7 +225,6 @@ include __DIR__ . '/view/header.php';
 
     });
 </script>
-
 <?php
 include __DIR__ . '/view/footer.php';
 ?>
