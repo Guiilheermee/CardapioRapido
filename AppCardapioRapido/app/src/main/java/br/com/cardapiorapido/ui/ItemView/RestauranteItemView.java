@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -16,7 +15,6 @@ import br.com.cardapiorapido.CardapioRapidoApplication;
 import br.com.cardapiorapido.R;
 import br.com.cardapiorapido.config.ApplicationState;
 import br.com.cardapiorapido.domain.Restaurante;
-import br.com.cardapiorapido.helper.UiHelper;
 import br.com.cardapiorapido.service.DialogService;
 import br.com.cardapiorapido.service.StateChanger;
 import butterknife.BindView;
@@ -71,6 +69,7 @@ public class RestauranteItemView extends BaseAdapter {
             ButterKnife.bind(this, inflater);
             Restaurante restaurante2 = restaurante.get(i);
             //UiHelper.showPicassoImage(restaurante2.getImagem(), ivBanner, mContext);
+            txtRestaurant.setText(restaurante2.getNome_empresa());
             txtRestaurant.setOnClickListener(view -> dialogService.showMessageTwoOptions(CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.attention), restaurante2.getNome_empresa() + "\n", CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.yes),
                     CardapioRapidoApplication.getApplicationComponent().getContext().getResources().getString(R.string.no), view1 -> {
                         stateChanger.closeDialog(ApplicationState.DialogConfirmTwoOptionsMessage);

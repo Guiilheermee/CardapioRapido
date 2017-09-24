@@ -5,25 +5,25 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.cardapiorapido.CardapioRapidoApplication;
 import br.com.cardapiorapido.R;
-import br.com.cardapiorapido.api.NetworkHelper;
-import br.com.cardapiorapido.helper.UiHelper;
+import br.com.cardapiorapido.domain.Restaurante;
 import br.com.cardapiorapido.ui.ItemView.RestauranteItemView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 
 
 public class RestaurantFragment extends AbstractFragment {
     private View mRootView;
 
     @BindView(R.id.list_banners)
-    GridView listBanners;
+    ListView listBanners;
 
 
     @Override
@@ -47,7 +47,18 @@ public class RestaurantFragment extends AbstractFragment {
     }
 
     public void openCall() {
-        NetworkHelper.getApiMovida().getBanners().subscribeOn(Schedulers.io())
+        List<Restaurante>lista=new ArrayList<>();
+        Restaurante restaurante1=new Restaurante();
+        restaurante1.setNome_empresa("La Ville");
+        lista.add(restaurante1);
+
+        Restaurante restaurante2=new Restaurante();
+        restaurante2.setNome_empresa("RU - UFGD");
+        lista.add(restaurante2);
+        RestauranteItemView adapter = new RestauranteItemView(getContext(), lista);
+
+        listBanners.setAdapter(adapter);
+    /*    NetworkHelper.getApiMovida().getBanners().subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(bannerResponse -> {
                             if (bannerResponse.isSuccess()) {
@@ -62,7 +73,7 @@ public class RestaurantFragment extends AbstractFragment {
                                 UiHelper.showDialog(getContext(), "", bannerResponse.getMsg(), "", null);
                         },
                         throwable ->
-                                showError(throwable));
+                                showError(throwable));*/
     }
 
     private void showError(Throwable error) {

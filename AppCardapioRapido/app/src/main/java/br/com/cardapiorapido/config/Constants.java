@@ -6,5 +6,5 @@ package br.com.cardapiorapido.config;
 
 public class Constants {
 
-    public static final String BASE_API = "https://http://cardapiorapido.byethost7.com";
+    public static final String BASE_API = "http://cardapiorapido.byethost7.com";
 }
